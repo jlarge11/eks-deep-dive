@@ -20,7 +20,7 @@ output "kubectl_config" {
 
 output "region" {
   description = "AWS region"
-  value       = var.region
+  value       = local.region
 }
 
 output "cluster_name" {

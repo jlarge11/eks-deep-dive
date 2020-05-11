@@ -5,7 +5,7 @@ variable "environment" {}
 provider "aws" {
   access_key = var.aws_access_key_id
   secret_key = var.aws_secret_access_key
-  region     = "us-west-1"
+  region     = "us-east-2"
 }
 
 terraform {
@@ -16,4 +16,8 @@ terraform {
       prefix = "main-"
     }
   }
+}
+
+locals {
+  region = "us-east-2"
 }
